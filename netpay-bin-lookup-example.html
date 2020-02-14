@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type = "text/javascript" src = "netpay-bin-lookup.js" ></script>
+    </head>
+<body>
+<script>
+  const Lookup = new NetPay();
+  var data = Lookup.lookup('474174');
+  var json = JSON.parse(data);
+
+  console.log(data)
+  if(json.result == 'success') {
+    console.log(json.data.type);
+    console.log(json.data.scheme);
+    console.log(json.data.bank_name);
+  }
+  else {
+    console.log(json.message);
+  }
+</script>
+</body>
+</html>

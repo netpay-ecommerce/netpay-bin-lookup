@@ -2,11 +2,16 @@
 
 Es una librería que permite identificar si la tarjeta es de crédito o debito, si es Visa, MasterCard o American Express, el banco emisor, etc con sólo el bin o prefijo de la tarjeta.
 
-## Minimum Requirements
+## Requerimientos mínimos
 
-JavaScript.
+PHP 5.4 +
 
-## Manual Installation en JavaScript
+## Instalación en JavaScript
+
+Archivos:
+* netpay-bin-lookup.js
+* netpay-bin-lookup-example.html
+
 
 Colocal el archivo de JavaScript en el header.
 
@@ -38,6 +43,9 @@ const Lookup = new NetPay();
 
 ## Pasar los valores de JavaScript a PHP
 
+Archivos:
+* netpay-bin-lookup-example.php
+
 ```php
 <?php
 $success = "<script>document.writeln(json.success);</script>";
@@ -58,7 +66,12 @@ $success = "<script>document.writeln(json.success);</script>";
 ```
 
 
-## Manual Installation en PHP
+## Instalación en PHP
+
+Archivos:
+* netpay-pbin-lookup-class.php
+* netpay-pbin-lookup-example.php
+* netpay-pbin-lookup.json
 
 Importar el archivo de la clase.
 

@@ -7,7 +7,7 @@
 <body>
   <script>
     const Lookup = new NetPay();
-    var data = Lookup.lookup('491573');
+    var data = Lookup.lookup('549949');
     var json = JSON.parse(data);
 
     console.log(data)
